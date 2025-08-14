@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #ece1d1;
+    color: #333;
+}
+body{
+    width: 100%;
+}
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+header{
+     position: fixed;
+        row-gap: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        position: fixed;
+        justify-content: space-between;
+        background-color:black;
+
+}
+/* header:hover{ */
+    /* background-color: black; */
+    
+
+/* } */
+#one{
+        display: flex;
+        width: 30%;
+
+    }
+    #two{
+        
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: space-between;
+        
+    
+    }
+     .abc{
+        text-decoration: none;
+        font-size: 26px;
+        color: white;
+    
+    
+    }
+      video{
+        width: 100%;
+        position: relative;
+        top: 60px;
+    }
+
+section {
+    padding: 30px 10%;
+}
+
+h2 {
+    color: rgb(40, 40, 165);
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 50px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.card:hover img{
+            transform: scale(1.05);
+    }
+
+.card p {
+    padding: 10px;
+}
+
+
+.timeline {
+    border-left: 4px solid #ff9933;
+    padding-left: 20px;
+}
+
+.timeline div {
+    margin-bottom: 20px;
+}
+
+.india-footer {
+    background-color: white;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Tricolor Bar Animation */
+.tricolor-bar {
+    height: 11px;
+    background: linear-gradient(90deg, #FF9933, #FFFFFF, #138808);
+    background-size: 300% 100%;
+    animation: tricolorMove 5s linear infinite;
+}
+@keyframes tricolorMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Footer Layout */
+.footer-content {
+    display: flex;
+    background-color: #050d16;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    min-width: 200px;
+}
+.footer-section h3{
+    color: red;
+}
+/* Brand Styles */
+.brand {
+    font-size: 2.8rem;
+    background: linear-gradient(90deg, #FF9933, #FFFFFF, #138808);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.tagline {
+    font-weight: bold;
+    margin-top: 5px;
+    color: red;
+}
+.desc {
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* Links */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+.footer-section a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: linear-gradient(90deg, #FF9933, #FFFFFF, #138808);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.footer-section a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Highlights */
+.highlight-list li {
+    margin: 5px 0;
+    color: white;
+}
+
+/* Social Icons */
+.social-icons a {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+/* Newsletter */
+.newsletter {
+    margin-top: 10px;
+    display: flex;
+}
+.newsletter input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    flex: 1;
+    border-radius: 4px 0 0 4px;
+}
+.newsletter button {
+    background: linear-gradient(90deg, #FF9933, #138808);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: background 0.3s ease;
+}
+.newsletter button:hover {
+    background: linear-gradient(90deg, #138808, #FF9933);
+}
+
+.footer-bottom {
+    background-color: white;
+    color: #050d16;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.85rem;
+}
